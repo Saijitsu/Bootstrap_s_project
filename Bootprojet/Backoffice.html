@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+
+    <title>Administration du site</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for Projet 3 -->
+    <link href="Style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet">
+
+    <!-- Font Awaesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+                    <a class="navbar-brand" href="Index.html">Les films Dn Plein Air</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="btn btn-success" href="Feuilles_XLS/reservations_festival.xlsx"> <span class="glyphicon glyphicon-download-alt"></span> Téléchargement: Inscriptions format XLS</a></li>
+                        <li><a href="Index.html" target="_blank"><i class="fas fa-home"></i> Retour au Site</a></li>
+
+                        <li class="dropdown ">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+						Compte
+						<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li class="dropdown-header">Paramètres</li>
+                                <li class=""><a href="#">Admin</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Se déconnecter</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </header>
+    <div class="container-fluid main-container">
+        <div class="col-md-12 content">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <span class="glyphicon glyphicon-list"></span>Liste des Articles
+                    <div class="pull-right action-buttons">
+                        <div class="btn-group pull-right">
+                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                <span class="glyphicon glyphicon-cog" style="margin-right: 0px;"></span>
+                            </button>
+                            <ul class="dropdown-menu slidedown">
+                                <li><a href="#"><span class="glyphicon glyphicon-pencil"></span>Editer</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-trash"></span>Effacer</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-flag"></span>Marquer</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox" />
+                                <label for="checkbox">
+                                    Actualité 1
+                                </label>
+                            </div>
+                            <div class="pull-right action-buttons">
+                                <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
+                                <a href="#" class="trash"><span class="glyphicon glyphicon-trash"></span></a>
+                                <a href="#" class="flag"><span class="glyphicon glyphicon-flag"></span></a>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox2" />
+                                <label for="checkbox2">
+                                    Actualité 2
+                                </label>
+                            </div>
+                            <div class="pull-right action-buttons">
+                                <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
+                                <a href="#" class="trash"><span class="glyphicon glyphicon-trash"></span></a>
+                                <a href="#" class="flag"><span class="glyphicon glyphicon-flag"></span></a>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox3" />
+                                <label for="checkbox3">
+                                    Actualité 3
+                                </label>
+                            </div>
+                            <div class="pull-right action-buttons">
+                                <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
+                                <a href="#" class="trash"><span class="glyphicon glyphicon-trash"></span></a>
+                                <a href="#" class="flag"><span class="glyphicon glyphicon-flag"></span></a>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox4" />
+                                <label for="checkbox4">
+                                    Actualité 4
+                                </label>
+                            </div>
+                            <div class="pull-right action-buttons">
+                                <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
+                                <a href="#" class="trash"><span class="glyphicon glyphicon-trash"></span></a>
+                                <a href="#" class="flag"><span class="glyphicon glyphicon-flag"></span></a>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox5" />
+                                <label for="checkbox5">
+                                    Actualité 5
+                                </label>
+                            </div>
+                            <div class="pull-right action-buttons">
+                                <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
+                                <a href="#" class="trash"><span class="glyphicon glyphicon-trash"></span></a>
+                                <a href="#" class="flag"><span class="glyphicon glyphicon-flag"></span></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col-md-6">
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="pagination pagination-sm pull-right">
+                                <li class="disabled"><a href="javascript:void(0)">«</a></li>
+                                <li class="active"><a href="javascript:void(0)">1 <span class="sr-only">(current)</span></a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="javascript:void(0)">»</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <strong>Article: Actualité</strong>
+                    </div>
+                    <div class="panel-body">
+                        <img class="editeur" alt="L'actualité du festival" src="Images/editeurdetextetop.png">
+                        <img alt="L'actualité du festival" src="Images/lfepaannonce2%20(1).png">
+                        <h2> Nous vous proposons de redécouvrir quelques classiques et perles rares du cinéma dans leur version restaurée.</h2>
+                        <p>Le cinéma comme vous ne l’avez jamais vu. La Traversée de Paris Description de cette image, également commentée ci-après Paris, terrasse d'un café, durant l'occupation allemande Données clés Réalisation Claude Autant-Lara Scénario Jean Aurenche Pierre Bost Michel Audiard Acteurs principaux Jean Gabin Bourvil Louis de Funès Jeannette Batti Harald Wolff Sociétés de production Continental Produzione Franco-London Films Pays d’origine Drapeau de la France France Drapeau de l'Italie Italie Genre Comédie dramatique Durée 80 minutes Sortie 1956 Pour plus de détails, voir Fiche technique et Distribution La Traversée de Paris est un film franco-italien, réalisé par Claude Autant-Lara, sorti en 1956. Le scénario s'est inspiré de la nouvelle de Marcel Aymé, Traversée de Paris, parue en 1947 dans le recueil Le Vin de Paris. Le thème du film se base sur le marché noir qui s'organisa durant l'occupation de la France par l'armée allemande entre 1940 et 1944. Le film a connu un certain succès à sortie et plusieurs répliques du film furent considérées très vite comme des répliques cultes, dont la célèbre expression « Salauds de pauvres ! », proférée par l'acteur Jean Gabin à l'adresse d'un couple de cafetiers1 et reprise par le fantaisiste Coluche, dans les années 1980. </p>
+                        <h3>Synopsis:</h3>
+                        <p>Paris, en 1942. Chauffeur de taxi au chômage, Marcel Martin gagne sa vie en livrant des colis au marché noir. Un jour, il doit transporter à pied, à l’autre bout de la capitale (plus précisément de la rue Poliveau à la rue Lepic), quatre valises contenant un cochon découpé. Il se rend dans la cave d’un nommé Jambier et y joue de l’accordéon pendant qu’on égorge l’animal. Il va ensuite avec sa compagne, Mariette, dans le restaurant où il doit retrouver un de ses amis, partenaire habituel de ces transports clandestins. Il y apprend que celui-ci vient d’être arrêté par la police. Un inconnu entre alors dans le restaurant et, sur un malentendu, craignant qu’il n'ait donné un rendez-vous à sa compagne, Martin l’invite à partager son dîner et à faire le transport avec lui. Ce choix se révèle vite calamiteux car ce personnage, un certain Grandgil, est loin d’être docile. Il extorque tout d’abord une forte somme à l'épicier du marché noir, Jambier, en le terrorisant. L'expédition nocturne est émaillée d'incidents. Ainsi, alors qu'ils sont suivis par deux agents qui vont certainement les contrôler, Grandgil se met à parler allemand, ce qui conduit les deux policiers à passer prudemment leur chemin. Plus tard, s'étant arrêtés dans l'hôtel où loge Martin, Grandgil téléphone en allemand, ce qui est entendu par la compagne de Martin. On s'interroge de plus en plus sur l'identité du personnage. Puis, dans un café où ils se sont réfugiés pour éviter une patrouille de police, il prend à partie le patron et la patronne ainsi que les clients qu'il traite de « salauds de pauvres ». Plus tard, contrôlés par un policier et sur le point d'être arrêtés, Grandgil va l'assommer pour s'en débarrasser. Et lorsque, fuyant une patrouille allemande, ils finissent par se réfugier dans l’appartement de Grandgil, c’est avec stupéfaction que Martin découvre qu’il s’agit d’un peintre d’une certaine renommée qui ne l’a suivi que pour expérimenter ce qui peut être fait en temps d'occupation. Poursuivant néanmoins leur chemin, ils arrivent enfin à l’adresse de la livraison mais trouvent la porte close. Ils font alors un tel tintamarre qu'une patrouille allemande intervient. Dans la KommandanturNB 1 où ils sont emmenés, un officier allemand reconnaît le peintre Grandgil. Il s’apprête à les faire relâcher lorsqu’on annonce l’assassinat d’un colonel. L’officier allemand ne parvient à sauver in extremis que Grandgil tandis que Martin, lui, est conduit à la prison du Cherche-Midi d'où on suppose qu'il risque d'être fusillé comme otage en représailles. Les années ont passé. Paris est libéré, et nous retrouvons Grandgil sur un quai de la gare de Lyon suivi par un porteur de valises. Du haut de la fenêtre du wagon, Grandgil reconnaît soudain Martin, portant comme toujours, les valises des autres.</p><br><br>
+                        <p class="text-right"><strong>Le Staff des Films De Plein Air</strong></p>
+                        <button type="button" class="btn btn-light"><i class="fas fa-check"></i> Publier</button>
+                        <button type="button" class="btn btn-light"><i class="fas fa-edit"></i> Editer</button>
+                        <button type="button" class="btn btn-light"><i class="fas fa-trash-alt"></i> Supprimer</button>
+                        <br><br>
+                        <img alt="L'actualité du festival" src="Images/editeurdetexte.png" class="editeur">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="text-center">
+
+        <!--/.Copyright-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h5>Copyright &copy; 2018 - Les Films De Plein Air.</h5>
+                    <p>Site développé par <a href="mailto:contact@nicolasturlet.fr">Nicolas Turlet</a>.</p>
+                </div>
+            </div>
+        </div>
+        <!--/.Copyright-->
+
+
+
+    </footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="bootstrap/js/jquery/jquery.slim.min.js"><\/script>')
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+</body>
+
+</html>
