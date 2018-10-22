@@ -13,7 +13,7 @@ body {
     line-height: 1.5;
     color: black;
     text-align: left;
-    background-image: url(Images/background.jpg);
+    background-image: linear-gradient(to left top, #bbded6, #9dd8d7, #7dd0de, #5ec7e9, #4bbcf4);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -32,7 +32,7 @@ main {
 }
 
 .navbar {
-    background-color: #4BBCF4;
+    background-image: linear-gradient(to left, #7dd0de, #5ec7e9, #4bbcf4);
     width: 100%
 }
 
@@ -42,16 +42,17 @@ main {
 }
 
 .navbar-default .navbar-nav > .active > a:hover {
-    background-color: #61C0BF;
+    background-color: limegreen;
 }
 
 .navbar-default .navbar-brand {
-    color: #243c4f;
+    color: black;
 }
 
 a.navbar-brand {
     font-family: Lighthouse_PersonalUse;
     font-size: 25px;
+    color: black;
     font-weight: bolder;
     text-align: center;
 }
@@ -171,6 +172,8 @@ button.navbar-toggle {
 }
 
 .jumbotron h2 {
+    font-family: 'Open sans';
+    font-weight: 700;
     font-size: 3.3em
 }
 
@@ -431,8 +434,7 @@ address {
 
 .fa-address-card {
     font-size: 3em;
-    color: color: #243c4f;
-    ;
+    color: #243c4f;
 }
 
 button.btn.btn-theme {
@@ -502,13 +504,12 @@ button.btn.btn-theme {
 }
 
 .entete {
-    background-image: url(Images/background2.png);
+    background: url(/Bootprojet/Images/jumbotronBackground.jpg) center no-repeat;
     background-size: cover;
-    margin: auto;
 }
 
 .footer-copyright {
-    background: #4BBCF4;
+    background-image: radial-gradient(circle, #bbded6, #9dd8d7, #7dd0de, #5ec7e9, #4bbcf4);
 }
 
 /* Background du site */
@@ -584,7 +585,6 @@ section.reservation h2 {
 /* fiche de film */
 
 .casting {
-    margin: ;
     background: radial-gradient(#BBDED6, white 62%)!important;
     font-size: 22px;
     font-weight: bolder;
@@ -622,7 +622,7 @@ section.reservation h2 {
     overflow: hidden;
     padding-bottom: 56.25%;
     position: relative;
-    > height: 0;
+    height: 0;
 }
 
 .carte iframe {
