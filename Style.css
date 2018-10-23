@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Lighthouse_PersonalUse";
-    src: url('fonts/Lighthouse_PersonalUse.ttf');
+    src: url("fonts/Lighthouse_PersonalUse.ttf");
 }
 
 /* Feuille de style */
@@ -50,7 +50,7 @@ main {
 }
 
 a.navbar-brand {
-    font-family: Lighthouse_PersonalUse;
+    font-family: "Lighthouse_PersonalUse";
     font-size: 25px;
     color: black;
     font-weight: bolder;
@@ -162,7 +162,7 @@ button.navbar-toggle {
 /* jumbotron Mise en page */
 
 .jumbotron {
-    font-family: Lighthouse_PersonalUse;
+    font-family: "Lighthouse_PersonalUse";
     color: black;
     margin: auto;
     text-align: center;
