@@ -13,7 +13,7 @@ body {
     line-height: 1.5;
     color: black;
     text-align: left;
-    background-image: linear-gradient(to left top, #bbded6, #9dd8d7, #7dd0de, #5ec7e9, #4bbcf4);
+    background-image: linear-gradient(to right bottom, #4bbcf4, #64d1e4, #99e0d6, #ccecd5, #f3f8e7);;
     background-size: cover;
     background-attachment: fixed;
 }
